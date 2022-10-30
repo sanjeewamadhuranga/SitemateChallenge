@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0075)file:///Users/sanjeewamuhandiram/Desktop/confirmation_dialog-component.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #921a20; -webkit-text-stroke: #921a20}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Arial; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; -webkit-text-stroke: #000000; min-height: 18.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #0000c2; -webkit-text-stroke: #0000c2}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #0000c2; -webkit-text-stroke: #0000c2; min-height: 18.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none; color: #0000c2; -webkit-text-stroke: 0px #0000c2}
+    span.s2 {font-kerning: none}
+    span.s3 {font-kerning: none; color: #fb0007; -webkit-text-stroke: 0px #fb0007}
+    span.s4 {font: 15.0px Menlo; font-kerning: none; color: #0000c2; -webkit-text-stroke: 0px #0000c2}
+    span.s5 {font: 15.0px Menlo; font-kerning: none; color: #921a20; -webkit-text-stroke: 0px #921a20}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">!DOCTYPE</span><span class="s3">&nbsp;html</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">html</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">head</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s4">&lt;</span><span class="s5">title</span><span class="s4">&gt;</span><span class="s2"><b>Reusable</b> <b>confirmation</b> <b>dialog</b></span><span class="s4">&lt;</span><span class="s5">/title</span><span class="s4">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">/head</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">body</span><span class="s1">&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p4"><span class="s2">&lt;button id=“clickMeBtn”&gt;Click me&lt;/button&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p4"><span class="s2">&lt;!-- The Modal --&gt;</span></p>
+<p class="p4"><span class="s2">&lt;div id=“confirmationModal" class="modal"&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>&lt;!-- Modal content --&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>&lt;div class="modal-content"&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span>&lt;span class="close"&gt;&amp;times;&lt;/span&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span>&lt;p&gt;Some text in the Modal..&lt;/p&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p4"><span class="s2">&lt;/div&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">script</span><span class="s1">&gt;</span></p>
+<p class="p6"><span class="s2">// Get the modal</span></p>
+<p class="p6"><span class="s2">var modal = document.getElementById("</span><span class="s1">confirmationModal</span><span class="s2">");</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p6"><span class="s2">// Get the button that opens the modal</span></p>
+<p class="p6"><span class="s2">var btn = document.getElementById("</span><span class="s1">clickMeBtn</span><span class="s2">");</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p6"><span class="s2">// Get the &lt;span&gt; element that closes the modal</span></p>
+<p class="p6"><span class="s2">var span = document.getElementsByClassName("close")[0];</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p6"><span class="s2">// When the user clicks the button, open the modal<span class="Apple-converted-space">&nbsp;</span></span></p>
+<p class="p6"><span class="s2">btn.onclick = function() {</span></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>modal.style.display = "block";</span></p>
+<p class="p6"><span class="s2">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p6"><span class="s2">// When the user clicks on &lt;span&gt; (x), close the modal</span></p>
+<p class="p6"><span class="s2">span.onclick = function() {</span></p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>modal.style.display = "none";</span></p>
+<p class="p6"><span class="s2">}</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">/script</span><span class="s1">&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">/body</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">/html</span><span class="s1">&gt;</span></p>
+
+
+</body></html>
